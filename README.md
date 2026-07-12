@@ -14,9 +14,9 @@ The player's goal is to compare the available villains, learn about their abilit
 - **Marvel Rivals** inspired the bold character presentation, vibrant visuals, and overall modern art direction.
 
 ## Design Choices
-- **Layout:** A responsive grid of character cards divided into three class sections, alongside a featured panel displaying the currently selected villain.
+- **Layout:** A responsive grid of character cards alongside a featured panel displaying the currently selected villain.
 - **Color:** Dark blacks, grays, and deep reds create an ominous villain-themed atmosphere while allowing characters and interface elements to stand out.
-- **Typography:** Large white and red headings provide strong visual contrast, while clean body text keeps information readable.
+- **Typography:** Large red headings provide strong visual contrast, while clean body text keeps information readable.
 - **Visual Hierarchy:** The selected villain and page title attract attention first, followed by the character grid and supporting interface elements.
 - **Feedback States:** Character cards, navigation links, and buttons change color when hovered over to indicate that they are interactive.
 - **Responsive Design:** The character grid adjusts from multiple columns on larger screens to a single-column layout on smaller devices.
@@ -29,7 +29,8 @@ The player's goal is to compare the available villains, learn about their abilit
 
 ## Credits
 - Interface inspiration from **Overwatch** and **Marvel Rivals**.
-- Character artwork sourced from Pinterest for educational and mockup purposes.
+- Background was sourced from pinterest for educational and mockup purposes
+- Character art was sketched up using portaits found on pinterest and then the sketches were put through generative AI specifically chatgpt to polish them into character cards.
 
 ## Future Improvements
 - Add JavaScript to make character selection fully interactive.
