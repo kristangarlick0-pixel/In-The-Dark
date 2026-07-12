@@ -1,0 +1,447 @@
+/* ===========================
+   RESET
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===========================
+   BODY
+=========================== */
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+    background:
+        linear-gradient(
+            rgba(10,10,10,.75),
+            rgba(10,10,10,.75)
+        ),
+        url("images/background.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    background: rgba(0,0,0,.65);
+
+    backdrop-filter: blur(10px);
+
+    border-bottom: 2px solid #ff2e63;
+
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+    color: #ff2e63;
+    font-size: 3rem;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #ff2e63;
+}
+
+/* ===========================
+   MAIN GAME LAYOUT
+=========================== */
+
+.game-ui {
+
+    display: grid;
+
+    grid-template-columns: 300px 1fr 250px;
+
+    gap: 30px;
+
+    max-width: 1500px;
+
+    margin: 40px auto;
+
+    padding: 20px;
+
+}
+
+/* ===========================
+   LEFT & RIGHT PANELS
+=========================== */
+
+.left-panel,
+.right-panel {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+/* ===========================
+   PANELS
+=========================== */
+
+section{
+    background: rgba(18,18,18,.80);
+
+    backdrop-filter: blur(8px);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 12px;
+
+    padding: 20px;
+}
+
+section h2 {
+
+    color: #ff2e63;
+
+    margin-bottom: 15px;
+
+}
+
+section h3 {
+
+    margin: 15px 0 10px;
+
+}
+
+/* ===========================
+   SELECTED HERO
+=========================== */
+
+.selected-character {
+
+    text-align: center;
+
+}
+
+.selected-character img {
+
+    width: 420px;
+
+    max-width: 100%;
+
+    border-radius: 15px;
+
+    border: 4px solid #ff2e63;
+
+    transition: .4s;
+
+}
+
+.selected-character img:hover {
+
+    transform: scale(1.03);
+
+}
+
+.selected-character h2 {
+
+    margin-top: 20px;
+
+    font-size: 2.5rem;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+button {
+
+    margin-top: 25px;
+
+    background: #9b111e;
+
+    color: white;
+
+    padding: 15px 35px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+button:hover {
+
+    background: #ff2e63;
+
+    transform: scale(1.05);
+
+}
+
+/* ===========================
+   OVERVIEW
+=========================== */
+
+.overview ul {
+
+    margin-left: 20px;
+
+}
+
+.overview li {
+
+    margin-bottom: 10px;
+
+}
+
+/* ===========================
+   TEAM
+=========================== */
+
+.team-icons {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 18px;
+
+}
+.player{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:8px;
+
+}
+
+.player span{
+
+    font-size:.8rem;
+    color:#ccc;
+
+}
+.player-slot{
+
+    width:80px;
+    height:80px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    border:3px solid #555;
+
+    transition:.3s;
+
+    background:#222;
+
+}
+
+.player-slot img{
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.player-slot:hover{
+
+    transform:scale(1.1);
+
+    border-color:#ff2e63;
+
+    box-shadow:0 0 15px #ff2e63;
+
+}
+
+.player-slot.locked{
+
+    border:3px solid #2dff72;
+
+    box-shadow:0 0 18px #2dff72;
+
+}
+
+/* ===========================
+   CHARACTER SELECTION
+=========================== */
+
+.character-selection {
+
+    max-width: 1500px;
+
+    margin: auto;
+
+    padding: 20px;
+
+}
+
+.character-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card{
+    background: rgba(30,30,30,.80);
+
+    border: 2px solid transparent;
+
+    border-radius: 12px;
+
+    transition: .3s;
+}
+
+.card img {
+
+    width: 100%;
+
+    border-radius: 10px;
+
+}
+
+.card h3 {
+
+    margin-top: 10px;
+
+}
+
+.card:hover{
+
+    border-color:#ff2e63;
+
+    box-shadow:0 0 20px #ff2e63;
+
+    transform:translateY(-8px);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer {
+
+    background: #161616;
+
+    border-top: 3px solid #9b111e;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 1100px) {
+
+    .game-ui {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .left-panel,
+    .right-panel {
+
+        flex-direction: row;
+
+        justify-content: space-between;
+
+    }
+
+    .character-grid {
+
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    .team-icons {
+
+        flex-direction: row;
+
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    header h1 {
+
+        font-size: 2rem;
+
+    }
+
+    nav ul {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+    .character-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .character-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
